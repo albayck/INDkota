@@ -10,9 +10,9 @@ $kuning="\033[1;33m";
 //flag
 print"$ijo
 ========================================================\n
-[]  [] [][][] [][][]$red  !!!! WARNING !!!!$pink
+[]  [] [][][] [][][]$red  !!!! Copas by script Tahoe !!!!$pink
 []  [] []     []   []$red ==> CREATED_By_¥©€5D1 <==$pink
-[][][] [][]   []   []$kuning bisa kena $red Banned$pink
+[][][] [][]   []   []$kuning hati-hati bisa kena $red Banned$pink
 []  [] []     []   []$pink pergunakan dengan bijak$ijo
 []  [] [][][] [][][]$biru   Te$turkis ri$ijo ma$pink ka$kuning sih\n$ijo
 ========================================================\n$biru";
@@ -21,7 +21,7 @@ function id($token,$jumlah,$wait)
 $x = 0;
 while($x < $jumlah) { $rand = rand(1,99999);
 $ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, "https://api.indkota.com//Content/Billing/billing?member_token='.$token.'&billing_id=$rand");
+curl_setopt($ch, CURLOPT_URL, "https://api.9jta.com//Content/Billing/billing?member_token='.$token.'&billing_id=$rand");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 1);
