@@ -6,7 +6,7 @@ function id($token,$jumlah,$wait) {
 
 	$rand 	= rand(1,99999);
     $ch 	= curl_init();
-	curl_setopt($ch, CURLOPT_URL, "https://api.indkota.com/Content/Content/read?member_token='.$token.'&content_id=$rand&lang=indonesian&device_id=$rand");
+	curl_setopt($ch, CURLOPT_URL, "https://api.9jta.com/Content/Content/read?member_token='.$token.'&content_id=$rand&lang=indonesian&device_id=$rand");
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 	curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
 	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 1);
