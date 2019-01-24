@@ -6,7 +6,7 @@ while(1){
   curl_setopt($ch, CURLOPT_URL, "https://api.9jta.com/System/Invite/rewarded_video");
   curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
   curl_setopt($ch, CURLOPT_POSTFIELDS, 
-"member_token=NjIwODU3MjQwNzE1ODEtLXx8LS0wYTIyMjc0YTNiZjBkOGVjOTNlNWMyMmUxNWJhYzMwYw%3D%3D&device_id=66d3a80b14b50f96");
+"member_token=NjIwODM4MTU3NTcxMDgtLXx8LS1iZWViMmFiNDc3YzQ1OGNjYzg0YTUxNzc1Y2IyNjczNg&device_id=66d3a80b14b50f96");
   curl_setopt($ch, CURLOPT_POST, 1);
   curl_setopt($ch, CURLOPT_ENCODING, 'gzip, deflate');
 
