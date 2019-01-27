@@ -114,10 +114,10 @@ function coin($member_token, $device_id) {
 	$random = rand(0,1);
 	$num =  $number[$random];
 
-	$page = $curl->get('http://api.indkota.com/Content/Content/read?member_token='.$member_token.'&content_id='.$num.'&lang=indonesian&device_id='.$device_id.'');
+	$page = $curl->get('http://api.9jta.com/Content/Content/read?member_token='.$member_token.'&content_id='.$num.'&lang=indonesian&device_id='.$device_id.'');
 
 	if (stripos($page, '"status":true')) {
-		$post = $curl->post('api.indkota.com/User/User/user', 'member_token='.$member_token.'&device_id='.$device_id.'');
+		$post = $curl->post('api.9jta.com/User/User/user', 'member_token='.$member_token.'&device_id='.$device_id.'');
 		preg_match_all('/"member_gold":(.*?),/s', $post, $result);
 		echo $result[1][0];
 		$coin = fetch_value($page, '"msg":"',' "');
